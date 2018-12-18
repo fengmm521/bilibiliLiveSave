@@ -1,0 +1,21 @@
+#!/bin/bash
+export PATH=/usr/local/bin/:$PATH
+CUR_PATH=`pwd`
+basepath=$(cd `dirname $0`; pwd)
+echo $basepath
+echo $CUR_PATH
+pytoolpth=${basepath}/pycode/saveLiveTool.py
+
+if [[ $1 ]]; then
+    liveURL=`python ${pytoolpth} $1`
+
+elif [[ $2 ]]; then
+    liveURL=`python ${pytoolpth} $1 $2`
+else
+    echo "保存自已的bilibili直播视频到默认目录"
+    liveURL=`python ${pytoolpth}`
+fi
+DATE=`date "+%Y-%m-%d-%H-%M-%S"`
+echo $liveURL
+echo $DATE
+ffmpeg -i "${liveURL}" -c copy ${DATE}.flv

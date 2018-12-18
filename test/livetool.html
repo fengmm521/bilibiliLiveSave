@@ -1,0 +1,975 @@
+<!--- Bilibili Live Room. Â© 2014 - 2018 Bilibili Live Department. Powered
+By Fantastic Artwork Vue.js @ Evan You. Build: 2018.12.18 - 14:35:09 Verison:
+4.0.0 Env: production===ã ããªãã«é¢ããªããªã£ã¦ãéã³ãæè¨ã¨æ³£ãããã©â¦ã
+# Carry Your World # -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+        <meta name=renderer content=webkit>
+        <title id="link-app-title">
+            ãå°æºªãè¿æ¥å°±è¡¨ç½â¤ - å°æºªåµåµ - åå©åå©ç´æ­ï¼äºæ¬¡åå¼¹å¹ç´æ­å¹³å°
+        </title>
+        <meta name="description" content="å°æºªåµåµçåå©åå©ç´æ­é´,å¾®å: @Mi-baså°æºªç´æ­éç¥åºæ´ç¾¤ï¼419363562 æ¯æ6:30-9:00ç´æ­~æ¬¢è¿åä½è§ä¼èç·ä¸èµ·å¤§èªæµ·~ ????å¼¹å¹ï¼ç¤¼ç©ï¼éå·ï¼æ´»å¨å¤ç§ç©æ³ï¼bilibili ç´æ­è®©æ¨æè¿ä¸å°ä¼ä¼´ä»¬ä¹é´çè·ç¦»ã">
+        <meta name="keywords" content="å°æºªåµåµ,å¨±ä¹,è§é¢èå¤©,é·å§,cosplay,åé©¬å°¾,ç´æ­,Bç«,çæ¾é,bilibili,åå©åå©,åå©åå©ç´æ­,Bç«ç´æ­,å¼¹å¹,å­å¹,å¨æ¼«,å¨æ¼«é³ä¹,æ¸¸æ">
+        <meta name=application-name content=åå©åå©ç´æ­>
+        <meta name=format-detection content="telephone=no">
+        <meta name=apple-mobile-web-app-capable content=yes>
+        <meta name=apple-mobile-web-app-status-bar-style content=black>
+        <meta name=theme-color content=#4393E2>
+        <link rel=icon href=//www.bilibili.com/favicon.ico>
+        <link rel=apple-touch-icon href=//www.bilibili.com/favicon.ico>
+        <link rel=apple-touch-icon-precomposed href=//static.hdslb.com/mobile/img/512.png>
+        <script>
+            function addWaifu(n) {
+                try {
+                    window.planeptune || (window.planeptune = []),
+                    window.planeptune.push({
+                        key: n,
+                        ts: Date.now()
+                    })
+                } catch(n) {
+                    console.error(n)
+                }
+            }
+            addWaifu("neptune")
+        </script>
+        <script>
+            !
+            function(n) {
+                function e(e) {
+                    for (var c, f, a = e[0], d = e[1], b = e[2], t = 0, r = []; t < a.length; t++) f = a[t],
+                    s[f] && r.push(s[f][0]),
+                    s[f] = 0;
+                    for (c in d) Object.prototype.hasOwnProperty.call(d, c) && (n[c] = d[c]);
+                    for (l && l(e); r.length;) r.shift()();
+                    return i.push.apply(i, b || []),
+                    o()
+                }
+                function o() {
+                    for (var e, c = 0; c < i.length; c++) {
+                        for (var f = i[c], a = !0, d = 1; d < f.length; d++) {
+                            var b = f[d];
+                            0 !== s[b] && (a = !1)
+                        }
+                        a && (i.splice(c--, 1), e = u(u.s = f[0]))
+                    }
+                    return e
+                }
+                var f = {},
+                r = {
+                    manifest: 0
+                },
+                s = {
+                    manifest: 0
+                },
+                i = [];
+                function u(e) {
+                    if (f[e]) return f[e].exports;
+                    var c = f[e] = {
+                        i: e,
+                        l: !1,
+                        exports: {}
+                    };
+                    return n[e].call(c.exports, c, c.exports, u),
+                    c.l = !0,
+                    c.exports
+                }
+                u.e = function(i) {
+                    var e = [];
+                    r[i] ? e.push(r[i]) : 0 !== r[i] && {
+                        1 : 1,
+                        3 : 1,
+                        5 : 1,
+                        9 : 1,
+                        10 : 1,
+                        12 : 1,
+                        13 : 1,
+                        14 : 1,
+                        15 : 1,
+                        16 : 1,
+                        17 : 1,
+                        18 : 1,
+                        19 : 1,
+                        20 : 1,
+                        21 : 1,
+                        22 : 1,
+                        23 : 1,
+                        25 : 1,
+                        26 : 1,
+                        27 : 1,
+                        29 : 1,
+                        30 : 1,
+                        33 : 1,
+                        34 : 1,
+                        35 : 1,
+                        36 : 1,
+                        38 : 1,
+                        39 : 1,
+                        41 : 1,
+                        42 : 1,
+                        43 : 1,
+                        44 : 1,
+                        45 : 1,
+                        46 : 1,
+                        47 : 1,
+                        48 : 1,
+                        49 : 1,
+                        50 : 1
+                    } [i] && e.push(r[i] = new Promise(function(e, a) {
+                        for (var c = "static/css/" + i + "." + {
+                            0 : "31d6cfe0d16ae931b73c",
+                            1 : "21053c8f56ac8a0bfad1",
+                            2 : "31d6cfe0d16ae931b73c",
+                            3 : "1289462de120c8e4f860",
+                            4 : "31d6cfe0d16ae931b73c",
+                            5 : "eefa1eaf2ef4d83f4fe7",
+                            6 : "31d6cfe0d16ae931b73c",
+                            7 : "31d6cfe0d16ae931b73c",
+                            8 : "31d6cfe0d16ae931b73c",
+                            9 : "8487929c5101afc4e2f1",
+                            10 : "e28181bb4c4bd882da62",
+                            11 : "31d6cfe0d16ae931b73c",
+                            12 : "7f9010f4f50cea3edc64",
+                            13 : "1c536fb922d325de9616",
+                            14 : "dc9d1f27cf4e50f617b7",
+                            15 : "b7cb0f0b2b304c83c47d",
+                            16 : "f49c446dec11dae53e63",
+                            17 : "938a7df68428dc030ac1",
+                            18 : "27cfdf823ed2010696a4",
+                            19 : "372dffa576961cbee0f7",
+                            20 : "a97310fe7d382943233c",
+                            21 : "8f7d346ced5b4a0c87a6",
+                            22 : "a84ebc9a6b25e7ffcb72",
+                            23 : "df5a62fed54c8c1561c5",
+                            24 : "31d6cfe0d16ae931b73c",
+                            25 : "fc05bde5443c4a7bcdf8",
+                            26 : "1adfb532fc170221d38d",
+                            27 : "db8aebe5caf2785bd691",
+                            28 : "31d6cfe0d16ae931b73c",
+                            29 : "aace3f0a260a48e9bbe5",
+                            30 : "f33a667811a17cb6b45c",
+                            31 : "31d6cfe0d16ae931b73c",
+                            32 : "31d6cfe0d16ae931b73c",
+                            33 : "a7d7710fd1a1fde5ca0f",
+                            34 : "dbbc0f86f23b0ae225f0",
+                            35 : "6188b436e09cf4f1c545",
+                            36 : "f7745dd7b3b1e260efec",
+                            37 : "31d6cfe0d16ae931b73c",
+                            38 : "4a087982d854875028f5",
+                            39 : "2d173ab577dffff79c15",
+                            40 : "31d6cfe0d16ae931b73c",
+                            41 : "f85b953ed1061cdbc9e5",
+                            42 : "dc4ed54190d0ec070144",
+                            43 : "d5e70ccfa78bed5a4951",
+                            44 : "a85fe266b3171a9f46e8",
+                            45 : "9ffa74f6cd1345ab3646",
+                            46 : "f607276ba106f311af22",
+                            47 : "72768f2506d5a6e9c34d",
+                            48 : "67f5613813bda398cdd1",
+                            49 : "351329ade591e8b1cfe0",
+                            50 : "14dd6af76b5e90ef2996"
+                        } [i] + ".vip.css", d = u.p + c, f = document.getElementsByTagName("link"), b = 0; b < f.length; b++) {
+                            var t = (n = f[b]).getAttribute("data-href") || n.getAttribute("href");
+                            if ("stylesheet" === n.rel && (t === c || t === d)) return e()
+                        }
+                        var r = document.getElementsByTagName("style");
+                        for (b = 0; b < r.length; b++) {
+                            var n;
+                            if ((t = (n = r[b]).getAttribute("data-href")) === c || t === d) return e()
+                        }
+                        var o = document.createElement("link");
+                        o.rel = "stylesheet",
+                        o.type = "text/css",
+                        o.onload = e,
+                        o.onerror = function(e) {
+                            var c = e && e.target && e.target.src || d,
+                            f = new Error("Loading CSS chunk " + i + " failed.\n(" + c + ")");
+                            f.request = c,
+                            a(f)
+                        },
+                        o.href = d,
+                        document.getElementsByTagName("head")[0].appendChild(o)
+                    }).then(function() {
+                        r[i] = 0
+                    }));
+                    var f = s[i];
+                    if (0 !== f) if (f) e.push(f[2]);
+                    else {
+                        var c = new Promise(function(e, c) {
+                            f = s[i] = [e, c]
+                        });
+                        e.push(f[2] = c);
+                        var a = document.getElementsByTagName("head")[0],
+                        b = document.createElement("script");
+                        b.charset = "utf-8",
+                        b.timeout = 120,
+                        u.nc && b.setAttribute("nonce", u.nc),
+                        b.src = u.p + "static/js/" + i + "." + {
+                            0 : "e43f9db430529d56c126",
+                            1 : "9f24f3cfcc3cac63bd77",
+                            2 : "694ddcd5028ebc482653",
+                            3 : "3b13209acb786e96de09",
+                            4 : "f01704aec9449e770919",
+                            5 : "70045c1855da689fb771",
+                            6 : "f8abd69b68afe826cc21",
+                            7 : "239d61fadaef213232bf",
+                            8 : "acf91a431e9137fb60b9",
+                            9 : "2e3d98867121cfe5ff45",
+                            10 : "75ab43116eb773468118",
+                            11 : "d39ae4d9fbdb11086e4a",
+                            12 : "4b53361fb5a395584c3f",
+                            13 : "7f79b2379cf2bb71fa88",
+                            14 : "9d64fc0b23bb9b5b98b4",
+                            15 : "95613d09b8fcfdfb66e6",
+                            16 : "e33d37ff6347cb512f58",
+                            17 : "3a61d696504a3f06a414",
+                            18 : "a0d098ee507a82f6a472",
+                            19 : "b9b87504aa39369fc422",
+                            20 : "46dfdc1839d88d2c6af1",
+                            21 : "f1e19460b9700972c0c8",
+                            22 : "eb33bc3586431d3b8d34",
+                            23 : "1c74a4e076cc902dc315",
+                            24 : "6bd18fbe46ce38135f4b",
+                            25 : "53be505d3773720334f0",
+                            26 : "3ff09ffcc5fa21dd1429",
+                            27 : "0842ba38ab78020b39b3",
+                            28 : "eebce0066ef205ff2ee3",
+                            29 : "181a68b723641c70bd5b",
+                            30 : "6c4dd6f9d3093026bc7b",
+                            31 : "a2ac029131240da14196",
+                            32 : "d455c4721810564d96f7",
+                            33 : "269b7c23e4ee0ea34ebc",
+                            34 : "4c0b69a7474697ecd7c9",
+                            35 : "b907205cbdf25e39e8a5",
+                            36 : "dd77ac8e3e3f50f29a60",
+                            37 : "cd383c98f23d7aa7443e",
+                            38 : "6428c33d1c1f9b6b50ac",
+                            39 : "1ec36ccd8f93e7b587e4",
+                            40 : "5d28276a663e77ba78fd",
+                            41 : "bd26b9d8ec1fc41d9310",
+                            42 : "04991b868638c59006b3",
+                            43 : "d4590abcd56c508eaeda",
+                            44 : "2700d6b03e15f67b9152",
+                            45 : "f4d9976e0705e4507669",
+                            46 : "c989c6980295070bac4a",
+                            47 : "3e3a6f38407722791b7e",
+                            48 : "6ed0fe77211e20897f58",
+                            49 : "cbb4c71ae9bb241034f8",
+                            50 : "711eafa86b7bcfde810b"
+                        } [i] + ".js";
+                        var t = setTimeout(function() {
+                            d({
+                                type: "timeout",
+                                target: b
+                            })
+                        },
+                        12e4);
+                        function d(e) {
+                            b.onerror = b.onload = null,
+                            clearTimeout(t);
+                            var c = s[i];
+                            if (0 !== c) {
+                                if (c) {
+                                    var f = e && ("load" === e.type ? "missing": e.type),
+                                    a = e && e.target && e.target.src,
+                                    d = new Error("Loading chunk " + i + " failed.\n(" + f + ": " + a + ")");
+                                    d.type = f,
+                                    d.request = a,
+                                    c[1](d)
+                                }
+                                s[i] = void 0
+                            }
+                        }
+                        b.onerror = b.onload = d,
+                        a.appendChild(b)
+                    }
+                    return Promise.all(e)
+                },
+                u.m = n,
+                u.c = f,
+                u.d = function(e, c, f) {
+                    u.o(e, c) || Object.defineProperty(e, c, {
+                        configurable: !1,
+                        enumerable: !0,
+                        get: f
+                    })
+                },
+                u.r = function(e) {
+                    Object.defineProperty(e, "__esModule", {
+                        value: !0
+                    })
+                },
+                u.n = function(e) {
+                    var c = e && e.__esModule ?
+                    function() {
+                        return e.
+                    default
+                    }:
+                    function() {
+                        return e
+                    };
+                    return u.d(c, "a", c),
+                    c
+                },
+                u.o = function(e, c) {
+                    return Object.prototype.hasOwnProperty.call(e, c)
+                },
+                u.p = "//s1.hdslb.com/bfs/static/blive/blfe-live-room/",
+                u.oe = function(e) {
+                    throw console.error(e),
+                    e
+                };
+                var c = window.webpackJsonp = window.webpackJsonp || [],
+                a = c.push.bind(c);
+                c.push = e,
+                c = c.slice();
+                for (var d = 0; d < c.length; d++) e(c[d]);
+                var l = a;
+                o()
+            } ([])
+        </script>
+        <script>
+            (window.webpackJsonp = window.webpackJsonp || []).push([["jump"], {
+                358 : function(n, o, t) {
+                    "use strict";
+                    t.r(o),
+                    t.d(o, "jumpExec",
+                    function() {
+                        return e
+                    }),
+                    t.d(o, "isMobileDevice",
+                    function() {
+                        return r
+                    }),
+                    t.d(o, "isRoomUrl",
+                    function() {
+                        return c
+                    }),
+                    t.d(o, "replaceDesktopUrlToMobileUrl",
+                    function() {
+                        return u
+                    }),
+                    t.d(o, "stopJumpingByCookie",
+                    function() {
+                        return a
+                    });
+                    var i = document.cookie;
+                    function e(n, o, t) {
+                        if (!c(n) || a(o) || !r(t) && "#html5" !== location.hash || /h5/.test(n)) return ! 1;
+                        var i = u(n);
+                        return (window.top || window).location.href = i,
+                        !0
+                    }
+                    function r(n) {
+                        return /(iPad|iPhone|iPod|MicroMessenger|Windows Phone|Android)/i.test(n)
+                    }
+                    function c(n) {
+                        return /^(https?):\/\/live.bilibili.com\/(.+\/)?([\d]+)/.test(n)
+                    }
+                    function u(n) {
+                        return - 1 < n.indexOf(".com/h5") ? n: n.replace(/\.com(\/blanc)?/i, ".com/h5")
+                    }
+                    function a(n) {
+                        var o = null,
+                        t = n.match(/nmr=[0-9]/);
+                        if (t) try {
+                            o = parseInt(t[0].match(/[0-9]/)[0], 10)
+                        } catch(n) {}
+                        return 1 === o
+                    }
+                    e(window.location.href, i, window.navigator.userAgent)
+                }
+            },
+            [[358, "manifest"]]])
+        </script>
+        <script>
+            !
+            function() {
+                var i = Date.now(),
+                D = Math.floor(i / 1e3);
+                window.BilibiliLive = {
+                    INIT_TIME: i,
+                    RND: D,
+                    UID: 0,
+                    ROOMID: 0,
+                    ANCHOR_UID: 0
+                },
+                window.DANMU_RND = D
+            } ()
+        </script>
+        <script>
+            addWaifu && addWaifu("noire")
+        </script>
+        <style>
+            /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css
+            */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em
+            0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline
+            dotted}b,strong{font-weight:inherit;font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html
+            [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px
+            dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}[hidden],template{display:none}html{font-size:12px}body{padding:0;margin:0;border:0;font-family:Arial,Microsoft
+            YaHei,Microsoft Sans Serif,Microsoft SanSerf,\\5FAE\8F6F\96C5\9ED1}img{border:0;outline:0}a{text-decoration:none}button{outline:none}input{font-family:Arial,Microsoft
+            YaHei,Microsoft Sans Serif,Microsoft SanSerf,\\5FAE\8F6F\96C5\9ED1}.p-absolute{position:absolute}.p-relative{position:relative}.p-fixed{position:fixed}.p-center,.p-zero{top:0;left:0}.p-center{position:absolute;bottom:0;right:0}.f-left{float:left}.f-right{float:right}.f-clear:after{content:"";display:block;visibility:hidden;clear:both}.m-auto{margin:0
+            auto}.v-top{vertical-align:top}.v-middle{vertical-align:middle}.v-bottom{vertical-align:bottom}.w-100{width:100%}.h-100{height:100%}.dp-block{display:block}.dp-i-block{display:inline-block}.dp-none{display:none}.dp-table{display:table}.dp-flex{display:-webkit-box;display:-ms-flexbox;display:flex}.flex-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.flex-center,.flex-h-center{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.flex-v-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.border-box{-webkit-box-sizing:border-box;box-sizing:border-box}.t-left{text-align:left}.t-center{text-align:center}.t-right{text-align:right}.t-over-hidden{overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}.t-no-wrap,.t-nowrap{white-space:nowrap}.f-family{font-family:Arial,Microsoft
+            YaHei,Microsoft Sans Serif,Microsoft SanSerf,\\5FAE\8F6F\96C5\9ED1}.bg-white{background-color:#fff}.bg-center{background-position:50%}.bg-no-repeat{background-repeat:no-repeat}.bg-cover{background-size:cover}.bg-contain{background-size:contain}.bg-fixed{background-attachment:fixed}.over-hidden{overflow:hidden}.pointer{cursor:pointer}.no-select,.none-select{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.list-none{padding:0;margin:0;list-style:none}.b-circle{border-radius:50%}.v-hidden{visibility:hidden}.bili-link{text-decoration:none;color:#23ade5}.bili-link.pink{color:#ff94b1}.bili-link.blue{color:#23ade5}.bili-link.gray{color:#d0d7dd}body{font-family:Arial,Microsoft
+            YaHei,Microsoft Sans Serif,Microsoft SanSerf,\\5FAE\8F6F\96C5\9ED1!important;min-width:1200px;overflow-y:scroll;background-color:#f2f3f5}@media
+            screen and (min-width:1270px){body{overflow-x:hidden}}@media screen and
+            (-o-min-device-pixel-ratio:2/1),screen and (-webkit-min-device-pixel-ratio:2),screen
+            and (min-resolution:2dppx){body{-webkit-font-smoothing:antialiased}}main,section{display:block}[v-cloak]{display:none}.dp-table-cell{display:table-cell}.fixed-limitation{-webkit-transform:translate(0);-ms-transform:translate(0);transform:translate(0)}.no-switcher::-webkit-inner-spin-button{-webkit-appearance:none}.link-toast{pointer-events:none}.common-popup-wrap{position:relative;z-index:10000;display:block;padding:16px;-webkit-box-sizing:border-box;box-sizing:border-box;background:#fff;border:1px
+            solid #e9eaec;border-radius:8px;-webkit-box-shadow:0 6px 12px 0 rgba(106,115,133,.22);box-shadow:0
+            6px 12px 0 rgba(106,115,133,.22)}.common-popup-wrap.pd-24{padding:24px}.common-popup-wrap.arrow-top:before{top:-4px;border-color:transparent
+            transparent #e9eaec;border-width:0 4px 4px}.common-popup-wrap.arrow-top:after,.common-popup-wrap.arrow-top:before{content:"";position:absolute;display:inline-block;width:0;height:0;border-style:solid;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.common-popup-wrap.arrow-top:after{top:-3px;border-color:transparent
+            transparent #fff;border-width:0 3px 3px}.common-popup-wrap.arrow-right:before{right:-4px;border-color:transparent
+            transparent transparent #e9eaec;border-width:4px 0 4px 4px}.common-popup-wrap.arrow-right:after,.common-popup-wrap.arrow-right:before{content:"";position:absolute;display:inline-block;width:0;height:0;border-style:solid;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.common-popup-wrap.arrow-right:after{right:-3px;border-color:transparent
+            transparent transparent #fff;border-width:3px 0 3px 3px}.common-popup-wrap.arrow-bottom:before{bottom:-4px;border-color:#e9eaec
+            transparent transparent;border-width:4px 4px 0}.common-popup-wrap.arrow-bottom:after,.common-popup-wrap.arrow-bottom:before{content:"";position:absolute;display:inline-block;width:0;height:0;border-style:solid;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.common-popup-wrap.arrow-bottom:after{bottom:-3px;border-color:#fff
+            transparent transparent;border-width:3px 3px 0}.common-popup-wrap.arrow-left:before{left:-4px;border-color:transparent
+            #e9eaec transparent transparent;border-width:4px 4px 4px 0}.common-popup-wrap.arrow-left:after,.common-popup-wrap.arrow-left:before{content:"";position:absolute;display:inline-block;width:0;height:0;border-style:solid;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.common-popup-wrap.arrow-left:after{left:-3px;border-color:transparent
+            #fff transparent transparent;border-width:3px 3px 3px 0}.common-popup-wrap>.close{position:absolute;top:16px;right:16px;z-index:99;display:inline-block;line-height:1;font-size:16px;color:#999;cursor:pointer;-webkit-transition:all
+            .3s cubic-bezier(.22,.58,.12,.98);-o-transition:all .3s cubic-bezier(.22,.58,.12,.98);transition:all
+            .3s cubic-bezier(.22,.58,.12,.98)}.common-popup-wrap>.close:hover{-webkit-transform:rotate(180deg)
+            scale(1.1);-ms-transform:rotate(180deg) scale(1.1);transform:rotate(180deg)
+            scale(1.1)}.live-room-app .app-content{padding-top:66px}.live-room-app
+            .app-content .app-body{min-width:1220px;max-width:1504px;width:80%}@media
+            screen and (max-width:1250px){.live-room-app .app-content .app-body{padding:0
+            20px}}.live-room-app .app-content .app-body .player-and-aside-area{margin-bottom:12px}.live-room-app
+            .app-content .app-body .player-and-aside-area .left-container{width:calc(100%
+            - 302px - 12px);-webkit-box-sizing:border-box;box-sizing:border-box}.live-room-app
+            .app-content .app-body .player-and-aside-area .left-container .head-info-section{height:96px;background-color:#fff;border:1px
+            solid #e9eaec;border-radius:12px 12px 0 0}.live-room-app .app-content .app-body
+            .player-and-aside-area .left-container .player-section{position:relative;width:100%;padding-top:56.3%;background-color:#fff}.live-room-app
+            .app-content .app-body .player-and-aside-area .left-container .gift-control-section{height:124px;border:1px
+            solid #e9eaec;border-radius:0 0 12px 12px;background-color:#fff}.live-room-app
+            .app-content .app-body .player-and-aside-area .aside-area{width:302px;top:0;right:0;bottom:0;background-color:#f8f8f8;border:1px
+            solid #e9eaec;border-radius:12px}.live-room-app .app-content .app-body
+            .player-and-aside-area .aside-area .rank-list-section{height:128px;border-radius:12px
+            12px 0 0;background-color:#fff}.live-room-app .app-content .app-body .player-and-aside-area
+            .aside-area .activity-welcome-section{width:100%;position:absolute;top:128px}.live-room-app
+            .app-content .app-body .player-and-aside-area .aside-area .chat-popups-icon-section,.live-room-app
+            .app-content .app-body .player-and-aside-area .aside-area .chat-popups-section{width:100%;position:absolute;bottom:145px}.live-room-app
+            .app-content .app-body .player-and-aside-area .aside-area .chat-history-panel{height:calc(100%
+            - 128px - 145px);z-index:1}.live-room-app .app-content .app-body .player-and-aside-area
+            .aside-area .chat-control-panel{height:145px;border-radius:0 0 12px 12px}.live-room-app
+            .app-content .app-body .player-and-aside-area .background-changer{position:absolute;width:20px;top:96px;left:-24px}.live-room-app
+            .app-content .app-body .section-block{position:relative;margin-bottom:12px}.live-room-app
+            .app-content .app-body .section-block .left-container{float:left;width:calc(100%
+            - 302px - 12px)}.live-room-app .app-content .app-body .section-block .right-container{float:right;width:302px;min-height:400px}.live-room-app
+            .app-content .link-footer-ctnr{min-height:318px;background-color:#f5f6f8}body.fullscreen-fix{width:100vw;height:100vh;overflow:hidden}body.fullscreen-fix
+            .live-room-app{width:0!important}body.fullscreen-fix .app-content,body.fullscreen-fix
+            .player-section{padding:0!important}body.fullscreen-fix div#background-manage-vm,body.fullscreen-fix
+            div#ema-wishing-vm,body.fullscreen-fix div#enter-failure,body.fullscreen-fix
+            div#gift-control-vm,body.fullscreen-fix div#gold-store-vm,body.fullscreen-fix
+            div#guard-store-vm,body.fullscreen-fix div#head-info-vm.head-info-section,body.fullscreen-fix
+            div#link-footer-vm,body.fullscreen-fix div#link-navbar-vm,body.fullscreen-fix
+            div#my-dear-haruna-vm,body.fullscreen-fix div#player-effect-vm,body.fullscreen-fix
+            div#room-background-vm,body.fullscreen-fix div#sidebar-vm,body.fullscreen-fix
+            div.aside-area,body.fullscreen-fix section#sections-vm{display:none!important}.contain-strict{contain:strict}.contain-optimize{contain:size
+            style}.gift-control-section{contain:style layout}.z-navbar{z-index:1000}.z-app-content{z-index:990}.z-app-body{z-index:5}.z-link-footer-ctnr{z-index:3}.z-player-and-aside-area{z-index:6}.z-sidebar{z-index:10}.z-player-ctnr{z-index:8}.z-aside-area{z-index:6}.z-background-manage{z-index:9}.z-room-background{z-index:1}.z-my-dear-haruna{z-index:15}.z-section-blocks{z-index:1}.z-feed-card-popup{position:relative;z-index:99}.z-head-info{z-index:8}.z-player-section{z-index:2}.z-gift-control-section{z-index:5}.z-live-player-ctnr{z-index:1}.z-player-effect-vm{z-index:5}.z-gift-package{z-index:1}.z-gift-sender-panel{z-index:9}.z-rank-list{z-index:26}.z-gift-screen-animation{z-index:28}.z-activity-welcome{z-index:8}.z-chat-popup-area{z-index:6}.z-chat-popup-icon{z-index:3}.z-chat-control-panel-dialog{z-index:30}.z-chat-history-list{z-index:1}.z-danmaku-menu{z-index:20}.z-player{z-index:100}.z-live-haruna{z-index:998}.link-popup-ctnr,.z-enter-failure{z-index:10000}.z-player-toast{z-index:999}.activity-lottery.school-lottery{background-image:url(//s1.hdslb.com/bfs/static/blive/blfe-live-room/static/img/lottery.ef4081a.gif)}.activity-lottery-result
+            .prize-pic.gift-real-gift{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAACZUExURUxpcTR3ojR3ojR3ojR3ojR3ojR3ojR3ojR3ojR3ojR3ojR3ojR3ojR3ojR3ojR3ojR3ojR3ojR3ov///zKAs9Tk8TJ3pCt3qO/09yJ2rfb4+vv8/Wen0TWFuS58r5HA31OZx8rh8N7r9TyKvUSQwp7I5KrP5+nr7+Tv9l+izih8tLfV6sTd7n212r3a7NPe53iy2HOv2H+01+yZFakAAAATdFJOUwCPXBWyIod+lkj1w2t2MNUJot+cMD4SAAABdklEQVQ4y92U65qCIBCG1bTwkFYoqCmY2kHtuPd/catIWznsBex+v2bmeTkMfKBp/1S+ZzqOPsaIbNbGTM0hymreOCK2yOOrYmSh5BJeYsyJmMamZ4yjjM4hp9M97hUlqE9mZh4PWUa8KTenFyy0T9y5HiTdmBWB8cktSYalujoMi51M0sq13zljU+CXytMrjnPTenG2W23xLzq16OeULLl1AIvCTrQ3aIbakUunYCrI65NEybj1NJ6C8Tj0QAWJ2FmWISgrXJDkIMtHsHR8lMGd9KBZlxIEHaey1OXDjLbZij1ubxC8yctC4ix9lAyr8wyA23qY4kKf57PqjdO7AYI4bzFuqP5uxUflcAgWQdGQ5YcZCfrp/k1ZQD65/hp92kHwTlarqSGFp6fiBHCawSII7okFQI+VEDxQH4CLMIbgldrwceUK7+4U4LpW2DtiBgDNQvUOwiUA3Ub1YnL4AzjZKZqqjCoTNhOqxGAzmrdQyP5T3/E3nl5ChTn8pBsAAAAASUVORK5CYII=)
+            no-repeat 50%}.activity-lottery-result .prize-pic.gift-stuff-1{background:url(//s1.hdslb.com/bfs/static/blive/blfe-live-room/static/img/stuff-1.9612d26.png)
+            no-repeat 50%}.activity-lottery-result .prize-pic.gift-stuff-2{background:url(//s1.hdslb.com/bfs/static/blive/blfe-live-room/static/img/stuff-2.2ecc385.png)
+            no-repeat 50%}.gift-frame{background-size:cover;background-repeat:no-repeat;image-rendering:-moz-crisp-edges;image-rendering:-o-crisp-edges;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;-ms-interpolation-mode:nearest-neighbor}.count-input-box
+            .count-input[type=number]::-webkit-inner-spin-button,.count-input-box .count-input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.gift-component-effect-rule{color:#000;line-height:1.5}.gift-component-effect-rule
+            span{color:#ff8e29}.gift-component-effect-rule a{color:#23ade5;text-decoration:none}#chat-control-panel-vm
+            div.danmaku-color-ctnr div.ps__scrollbar-y-rail{z-index:1}body.lite-room{overflow:hidden!important;background-color:transparent!important}body.lite-room
+            #ema-wishing-vm,body.lite-room #link-footer-vm,body.lite-room #link-navbar-vm,body.lite-room
+            #sections-vm{display:none!important}body.lite-room #chat-control-panel-vm,body.lite-room
+            #gift-control-vm,body.lite-room #head-info-vm,body.lite-room #rank-list-vm{border-radius:0!important}body.lite-room
+            .live-room-app .app-content{padding-top:0!important}body.lite-room .live-room-app
+            .app-content .app-body{width:100%!important;max-width:100%!important;padding:0!important}body.lite-room
+            .live-room-app .app-content .app-body .aside-area{border-radius:0!important}body.lite-room
+            .live-room-app .app-content .app-body .player-and-aside-area{margin-bottom:0!important}.bilibili-live-player{width:100%;height:100%;position:relative;background:#000;z-index:1}.bilibili-live-player-video-loading
+            .video-loading{width:40px;height:40px;position:absolute;left:50%;top:50%;margin-left:-20px;margin-top:-20px;border-radius:4px;background:url(data:image/gif;base64,R0lGODlhIAAgALMIADc3N5eXl3l5eVdXV9PT0+3t7bS0tCcnJ////wAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUDw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2Q0ZCQUZCNUYyQjQxMUUzOTM2QUNDMkEwQjMwNkZENiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2Q0ZCQUZCNkYyQjQxMUUzOTM2QUNDMkEwQjMwNkZENiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjZDRkJBRkIzRjJCNDExRTM5MzZBQ0MyQTBCMzA2RkQ2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjZDRkJBRkI0RjJCNDExRTM5MzZBQ0MyQTBCMzA2RkQ2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEBQgACAAsAAAAACAAIAAABHcQyUnrqThrevr+X3eBpOWVGZCJWgECMMZiRf3BMXdStX3jFlqvhFNtei5U7uNDOZ/QqHRKlRKuWMlgy4VivwSueOAFa8fVtHrN3ggEJIPB+X5/5PJSHQ7Czz97GQEYfoB2GAGJhHmAGomDhFSPbRKTlJZtmJlOEQAh+QQFCAAIACwAAAAAIAAgAAAEdxDJSWupOGta+v5fd4Gk5ZXZkYkaAR4wxmJE/cExd1K1feMWWq+EU216LlTu40M5n9CodEqVGq5YCWDLhWK/Bq4Y4AVrx9W0es3eDAakQMD5fn/k8lIdDsLPP3sZAhh+gHYYAomEeYAaiYOEVI9tEpOUlm2YmU4RACH5BAUIAAgALAAAAAAgACAAAAR3EMlJK6k4a0r6/l93gaTllVmRiZoBFjDGYkb9wTF3UrV94xZar4RTbXouVO7jQzmf0Kh0SpUGrljJYcuFYr8BrvjgBWvH1bR6zd4AACSBwPl+f+TyUh0Ows8/exkDGH6AdhgDiYR5gBqJg4RUj20Sk5SWbZiZThEAIfkEBQgACAAsAAAAACAAIAAABHcQyUmrqThravr+X3eBpOWVGZGJWgASMMZiQf3BMXdStX3jFlqvhFNtei5U7uNDOZ/QqHRKlQquWElhy4VivwKuuOAFa8fVtHrN3hwOpMHA+X5/5PJSHQ7Czz97GQAYfoB2GACJhHmAGomDhFSPbRKTlJZtmJlOEQAh+QQFCAAIACwAAAAAIAAgAAAEdxDJSWuoOGsa+v5fd4Gk5ZWZkYmaABowxmJC/cExd1K1feMWWq+EU216LlTu40M5n9CodEqVDq5YCWHLhWK/A66Y4AVrx9W0es3eFAokAMD5fn/k8lIdDsLPP3sZBxh+gHYYB4mEeYAaiYOEVI9tEpOUlm2YmU4RACH5BAUIAAgALAAAAAAgACAAAAR3EMlJq6g4ayr6/l93gaTllVmQidoABjDGYkP9wTF3UrV94xZar4RTbXouVO7jQzmf0Kh0SpUCrliJYcuFYr8ArtjgBWvH1bR6zd4QCKTDwfl+f+TyUh0Ows8/exkFGH6AdhgFiYR5gBqJg4RUj20Sk5SWbZiZThEAIfkEBQgACAAsAAAAACAAIAAABHcQyUnrqDhrOvr+X3eBpOWVmZCJGgAKMMZiQP3BMXdStX3jFlqvhFNtei5U7uNDOZ/QqHRKlR6uWElgy4VivweuOOAFa8fVtHrN3hgMpELB+X5/5PJSHQ7Czz97GQQYfoB2GASJhHmAGomDhFSPbRKTlJZtmJlOEQAh+QQFCAAIACwAAAAAIAAgAAAEdxDJSSuoOGsK+v5fd4Gk5ZXZkInaAQ4wxmJH/cExd1K1feMWWq+EU216LlTu40M5n9CodEqVFq5YiWDLhWK/Ba5Y4AVrx9W0es3eBAIkAsH5fn/k8lIdDsLPP3sZBhh+gHYYBomEeYAaiYOEVI9tEpOUlm2YmU4RADs=)
+            no-repeat 4px 4px;background-color:rgba(0,0,0,.7)}.bilibili-live-player-video-controller-hide-danmaku-container{display:none}.live-player-ctnr{z-index:0;color:#666}.live-player-ctnr.normal{left:0;top:0}.live-player-ctnr.minimal{width:300px;height:200px;padding-top:32px;position:fixed;bottom:80px;right:145px;background-color:#fff;border-radius:12px;-webkit-box-shadow:0
+            0 30px 1px rgba(158,216,255,.4);box-shadow:0 0 30px 1px rgba(158,216,255,.4)}.live-player-ctnr.minimal,.live-player-ctnr.minimal:before{overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.live-player-ctnr.minimal:before{content:attr(data-room-title);width:250px;height:32px;padding:0
+            15px;position:absolute;top:0;left:0;line-height:32px;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;-webkit-box-sizing:border-box;box-sizing:border-box;cursor:move}.live-player-ctnr.minimal
+            .minimal-restore-btn,.live-player-ctnr.minimal:hover .minimal-control-panel{display:block}.live-player-ctnr.minimal
+            .minimal-restore-btn{width:32px;height:32px;top:-32px;right:5px;border:0;font-size:15px;background-color:transparent;color:#999}.live-player-ctnr.minimal
+            .minimal-restore-btn:hover{-webkit-transform:rotate(180deg) scale(1.1);-ms-transform:rotate(180deg)
+            scale(1.1);transform:rotate(180deg) scale(1.1)}.live-player-ctnr.minimal
+            .minimal-restore-btn:active{-webkit-transform:rotate(180deg) scale(1);-ms-transform:rotate(180deg)
+            scale(1);transform:rotate(180deg) scale(1)}.live-player-ctnr.minimal .minimal-restore-btn
+            .icon{font-size:inherit}.live-player-ctnr.minimal .live-player-mounter{overflow:hidden}
+        </style>
+        <script>
+            addWaifu && addWaifu("blanc")
+        </script>
+    </head>
+    <body>
+        <script>
+            if ( - 1 !== window.location.search.indexOf("liteVersion=true") && window.top !== window) try {
+                document.domain = "bilibili.com",
+                document.body.className += document.body.className ? " lite-room": "lite-room",
+                window.top.__NEPTUNE_IS_MY_WAIFU__ && (window.__NEPTUNE_IS_MY_WAIFU__ = JSON.parse(JSON.stringify(window.top.__NEPTUNE_IS_MY_WAIFU__)))
+            } catch(o) {
+                console.error("DoâYouâLikeâVanâæ¸¸æ", o)
+            }
+        </script>
+        <!---->
+        <div class="live-room-app p-relative">
+            <div class="link-navbar-ctnr w-100 p-fixed p-zero ts-dot-4 z-navbar contain-optimize"
+            id=link-navbar-vm :class="{'hide': hideNavbar}">
+                <live-navbar :skin-config="{roomid: roomID, parentAreaID: parentAreaID, areaID: areaID}">
+                </live-navbar>
+            </div>
+            <main class="app-content p-relative z-app-content">
+                <div class="app-body p-relative m-auto z-app-body">
+                    <section class="player-and-aside-area p-relative z-player-and-aside-area">
+                        <div class=z-room-background id=room-background-vm>
+                            <room-background>
+                            </room-background>
+                        </div>
+                        <div class="player-ctnr left-container p-relative z-player-ctnr">
+                            <div class="head-info-section p-relative z-head-info" id=head-info-vm>
+                                <header-info>
+                                </header-info>
+                            </div>
+                            <div class="player-section p-relative border-box none-select z-player-section">
+                                <div class="live-player-ctnr w-100 h-100 p-absolute normal" id=live-player-ctnr>
+                                    <div class="h-100 p-relative">
+                                        <button class="minimal-restore-btn dp-none p-absolute pointer ts-dot-2"
+                                        id=minimal-restore-btn title=å³é­æ¬æµ®æ­æ¾å¨>
+                                            <i class="icon icon-font icon-close">
+                                            </i>
+                                        </button>
+                                        <div id=player-minimal-panel-vm>
+                                            <minimal-panel>
+                                            </minimal-panel>
+                                        </div>
+                                        <div class="live-player-mounter h-100" id=live-player>
+                                            <div id=js-player-decorator style=width:100%;height:100%;z-index:1;position:relative;>
+                                                <!-- Bilibili HTML5 Live Player - Face your destiny.-->
+                                                <div class=bilibili-live-player data-pre-rendered=true>
+                                                    <div class=bilibili-live-player-loading-panel>
+                                                    </div>
+                                                    <div class=bilibili-live-player-video-logo>
+                                                    </div>
+                                                    <div class=bilibili-live-player-video-area>
+                                                        <div class=bilibili-live-player-video-operable-container>
+                                                        </div>
+                                                        <div class=bilibili-live-player-video-danmaku>
+                                                        </div>
+                                                        <div class=bilibili-live-player-video-pause>
+                                                        </div>
+                                                        <div class=bilibili-live-player-video>
+                                                            <div class=bilibili-live-player-video-loading>
+                                                                <div class=video-loading>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class=bilibili-live-player-video-block>
+                                                    </div>
+                                                    <div class=bilibili-live-player-video-controller>
+                                                        <div class=bilibili-live-player-video-controller-container>
+                                                            <div class="bilibili-live-player-video-controller-content clearfix">
+                                                                <div class="bilibili-live-player-video-controller-left clearfix">
+                                                                    <div class="bilibili-live-player-video-controller-btn-item bilibili-live-player-video-controller-start-btn">
+                                                                    </div>
+                                                                    <div class="bilibili-live-player-video-controller-btn-item bilibili-live-player-video-controller-duration-btn">
+                                                                    </div>
+                                                                    <div class="bilibili-live-player-video-controller-btn-item bilibili-live-player-video-controller-volume-btn">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="bilibili-live-player-video-controller-right clearfix">
+                                                                    <div class="bilibili-live-player-video-controller-btn-item bilibili-live-player-video-controller-enter-the-room-btn"
+                                                                    style=order:1;>
+                                                                    </div>
+                                                                    <div class="bilibili-live-player-video-controller-btn-item bilibili-live-player-video-controller-switch-quality-btn"
+                                                                    style=order:2;>
+                                                                    </div>
+                                                                    <div class="bilibili-live-player-video-controller-btn-item bilibili-live-player-video-controller-switch-player-btn"
+                                                                    style=order:3;>
+                                                                    </div>
+                                                                    <div class="bilibili-live-player-video-controller-btn-item bilibili-live-player-video-controller-switch-line-btn"
+                                                                    style=order:4;>
+                                                                    </div>
+                                                                    <div class="bilibili-live-player-video-controller-btn-item bilibili-live-player-video-controller-reload-btn"
+                                                                    style=order:5;>
+                                                                    </div>
+                                                                    <div class="bilibili-live-player-video-controller-btn-item bilibili-live-player-video-controller-feedback-btn"
+                                                                    style=order:6;>
+                                                                    </div>
+                                                                    <div class="bilibili-live-player-video-controller-btn-item bilibili-live-player-video-controller-block-btn"
+                                                                    style=order:7;>
+                                                                    </div>
+                                                                    <div class="bilibili-live-player-video-controller-btn-item bilibili-live-player-video-controller-hide-danmaku-btn"
+                                                                    style=order:8;>
+                                                                        <div class=bilibili-live-player-video-controller-hide-danmaku-container>
+                                                                            <div class=bilibili-live-player-video-controller-hide-danmaku-group>
+                                                                                <div class=hide-danmaku-title>
+                                                                                    éæåº¦
+                                                                                </div>
+                                                                                <div class="hide-danmaku-content danmaku-opacity-slider">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class=bilibili-live-player-video-controller-hide-danmaku-group>
+                                                                                <div class=hide-danmaku-title>
+                                                                                    å­å·ç¼©æ¾
+                                                                                </div>
+                                                                                <div class="hide-danmaku-content danmaku-scale-slider">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class=bilibili-live-player-video-controller-hide-danmaku-group>
+                                                                                <div class=hide-danmaku-title>
+                                                                                    åå±å¯åº¦
+                                                                                </div>
+                                                                                <div class="hide-danmaku-content danmaku-density-slider">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class=bilibili-live-player-video-controller-hide-danmaku-group>
+                                                                                <div class="hide-danmaku-content danmaku-density-checkbox">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="bilibili-live-player-video-controller-btn-item bilibili-live-player-video-controller-web-fullscreen-btn"
+                                                                    style=order:9;>
+                                                                    </div>
+                                                                    <div class="bilibili-live-player-video-controller-btn-item bilibili-live-player-video-controller-fullscreen-btn"
+                                                                    style=order:10;>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class=bilibili-live-player-video-send>
+                                                    </div>
+                                                    <div class=bilibili-live-player-ending-panel>
+                                                    </div>
+                                                    <div class=bilibili-live-player-enter-tips>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <script>
+                                            function aea16741afe6960() {
+                                                var a = function() {
+                                                    window.aea16741afe6960 = null
+                                                };
+                                                try {
+                                                    if (!window.EmbedPlayer) return a();
+                                                    var e = document.getElementById("live-player");
+                                                    if (!e) return a();
+                                                    var r = window.__NEPTUNE_IS_MY_WAIFU__ || {},
+                                                    i = !!r.roomInitRes && 0 === r.roomInitRes.code && !!r.roomInitRes.data && r.roomInitRes.data.room_id;
+                                                    if (!i) return a();
+                                                    var o = r.roomInitRes || {
+                                                        code: 0
+                                                    },
+                                                    n = o.data || {};
+                                                    if (!n.live_status || n.is_locked || n.encrypted && !n.pwd_verified) return a();
+                                                    var t = {
+                                                        cid: i,
+                                                        container: e,
+                                                        initTime: performance.now(),
+                                                        roomInitData: o,
+                                                        rnd: window.DANMU_RND
+                                                    };
+                                                    o.data && o.data.live_status && r && r.playUrlRes && 0 === r.playUrlRes.code && r.playUrlRes.data && (t.playurlData = r.playUrlRes);
+                                                    var d = new window.EmbedPlayer(t);
+                                                    window.performance.timing.firstscreenfinish = (new Date).getTime(),
+                                                    addWaifu && addWaifu("misaka"),
+                                                    d.on("firstLoadedMetaData",
+                                                    function() {
+                                                        addWaifu && addWaifu("mikoto"),
+                                                        window.b57c0059eb86ec0 && (window.c1971fec81ba6a20 = "æä¸æ³åè¯´ä¸é")
+                                                    }),
+                                                    window.b57c0059eb86ec0 = d
+                                                } catch(a) {
+                                                    console.error("Player Bootstrap Error: ", a)
+                                                }
+                                                a()
+                                            }
+                                        </script>
+                                        <script>
+                                            addWaifu && addWaifu("vert")
+                                        </script>
+                                    </div>
+                                </div>
+                                <div class="aside-area-toggle-btn dp-none p-absolute">
+                                    <div class="dp-table-cell w-100 v-middle">
+                                        <div class="btn-ctnr p-relative">
+                                            <button class="restore-btn dp-none h-100 p-absolute bg-no-repeat pointer a-fade-in"
+                                            id=aside-area-toggle-btn>
+                                            </button>
+                                            <div class="btn-slider dp-none h-100 p-absolute a-fade-in">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=z-player-effect-vm id=player-effect-vm>
+                                    <player-effect>
+                                    </player-effect>
+                                </div>
+                                <div class=guard-lottery-animation id=guard-lottery-animation-vm>
+                                    <guard-lottery-animation>
+                                    </guard-lottery-animation>
+                                </div>
+                            </div>
+                            <div class="gift-control-section p-relative border-box z-gift-control-section"
+                            id=gift-control-vm>
+                                <gift-control-panel>
+                                </gift-control-panel>
+                            </div>
+                            <div id=pk-guard-vm>
+                                <pk-guard v-if=isShowPKGuard>
+                                </pk-guard>
+                            </div>
+                            <live-charge class="p-relative z-navbar" id=live-charge-vm>
+                            </live-charge>
+                        </div>
+                        <div class="aside-area p-absolute border-box z-aside-area">
+                            <div class="p-relative rank-list-section z-rank-list" id=rank-list-vm>
+                                <rank-list>
+                                </rank-list>
+                            </div>
+                            <div class=chat-history-panel>
+                                <div class="chat-history-list h-100 p-relative border-box z-chat-history-list"
+                                id=chat-history-list>
+                                </div>
+                                <div class="penury-gift-msg w-100 p-relative over-hidden" id=penury-gift-msg>
+                                </div>
+                                <div class="danmaku-menu-ctnr z-danmaku-menu" id=danmaku-menu-vm>
+                                </div>
+                            </div>
+                            <div class="activity-welcome-section z-activity-welcome" id=activity-welcome-area-vm>
+                                <activity-welcome-area>
+                                </activity-welcome-area>
+                            </div>
+                            <div class="chat-popups-section z-chat-popup-area" id=chat-popup-area-vm>
+                                <chat-popup-area>
+                                </chat-popup-area>
+                            </div>
+                            <div id=gift-screen-animation-vm>
+                                <gift-screen-animation>
+                                </gift-screen-animation>
+                            </div>
+                            <div class="chat-popups-icon-section z-chat-popup-icon" id=chat-popup-icon-vm>
+                                <chat-popup-icon>
+                                </chat-popup-icon>
+                            </div>
+                            <div class=chat-control-panel id=chat-control-panel-vm>
+                                <chat-control-panel>
+                                </chat-control-panel>
+                            </div>
+                        </div>
+                        <div class="background-changer z-background-manage" id=background-manage-vm>
+                            <background-manage v-if=isAnchor>
+                            </background-manage>
+                        </div>
+                        <!--Live Haruna By LancerComet at 17:48, 2016.11.23. # Carry Your World
+                        #===S UPER SPEED PERSON (?!) Mark II Haruna will be enhanced by an unknown
+                        force soon.-->
+                        <div class=haruna-sekai-de-ichiban-kawaii id=my-dear-haruna-vm>
+                            <live-haruna>
+                            </live-haruna>
+                        </div>
+                        <div id=guard-showcase-vm>
+                            <guard-showcase>
+                            </guard-showcase>
+                        </div>
+                    </section>
+                    <section id=sections-vm>
+                        <div class="section-block f-clear z-section-blocks">
+                            <div class=left-container>
+                                <ad-banner>
+                                </ad-banner>
+                                <room-info>
+                                </room-info>
+                                <feed>
+                                </feed>
+                            </div>
+                            <div class=right-container>
+                                <room-announcement>
+                                </room-announcement>
+                                <room-aside>
+                                </room-aside>
+                            </div>
+                        </div>
+                        <div class=z-feed-card-popup id=link-feed-card-popup>
+                        </div>
+                    </section>
+                    <div class="p-relative z-sidebar contain-optimize" id=sidebar-vm>
+                        <sidebar>
+                        </sidebar>
+                    </div>
+                </div>
+                <div class="link-footer-ctnr z-link-footer-ctnr" id=link-footer-vm>
+                    <link-footer>
+                    </link-footer>
+                </div>
+            </main>
+            <div class="p-relative z-navbar" id=gold-store-vm>
+                <gold-store v-if=showGoldStore :close=closeGoldStore :default-view=view
+                :default-amount=defaultAmount>
+                </gold-store>
+            </div>
+            <div class="p-relative z-navbar" id=guard-store-vm>
+                <guard-store>
+                </guard-store>
+            </div>
+            <div class="p-relative z-navbar" id=ema-wishing-vm>
+                <ema-wishing v-if=showEmaWishing :close=closeEmaWishing>
+                </ema-wishing>
+            </div>
+            <div class=enter-failure id=enter-failure>
+                <enter-failure :type=enterFailed>
+                </enter-failure>
+            </div>
+            <pk id=pk-vm>
+            </pk>
+        </div>
+        <script>
+            addWaifu && addWaifu("nepgear")
+        </script>
+        <div class=script-requirement>
+            <script>
+                window.__NEPTUNE_IS_MY_WAIFU__ = {
+                    "roomInitRes": {
+                        "code": 0,
+                        "data": {
+                            "room_id": 697972,
+                            "short_id": 0,
+                            "uid": 569919,
+                            "need_p2p": 0,
+                            "is_hidden": false,
+                            "is_locked": false,
+                            "is_portrait": false,
+                            "live_status": 1,
+                            "hidden_till": 0,
+                            "lock_till": 0,
+                            "encrypted": false,
+                            "pwd_verified": false,
+                            "live_time": 1545131306,
+                            "room_shield": 0,
+                            "is_sp": 0,
+                            "special_type": 0
+                        },
+                        "message": "ok",
+                        "msg": "ok"
+                    },
+                    "baseInfoRes": {
+                        "code": 0,
+                        "msg": "ok",
+                        "message": "ok",
+                        "data": {
+                            "uid": 569919,
+                            "room_id": 697972,
+                            "short_id": 0,
+                            "attention": 35384,
+                            "online": 3124,
+                            "is_portrait": false,
+                            "description": "\u003Cp\u003Eå¾®å: @Mi-baså°æºª\u003Cbr\u003Eç´æ­éç¥åºæ´ç¾¤ï¼419363562 \u003Cbr\u003Eæ¯æ6:30-9:00ç´æ­~æ¬¢è¿åä½è§ä¼èç·ä¸èµ·å¤§èªæµ·~\u003C\u002Fp\u003E\n\u003Cp\u003E????\u003C\u002Fp\u003E",
+                            "live_status": 1,
+                            "area_id": 145,
+                            "parent_area_id": 1,
+                            "parent_area_name": "å¨±ä¹",
+                            "old_area_id": 6,
+                            "background": "",
+                            "title": "ãå°æºªãè¿æ¥å°±è¡¨ç½â¤",
+                            "user_cover": "https:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Flive\u002Fuser_cover\u002Fbca7155a9886c4edd0ba52cb2ddb6f82a88aa3cb.jpg",
+                            "keyframe": "https:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Flive\u002F697972.jpg?12182059",
+                            "is_strict_room": false,
+                            "live_time": "2018-12-18 19:08:26",
+                            "tags": "é·å§,cosplay,åé©¬å°¾",
+                            "is_anchor": 0,
+                            "room_silent_type": "",
+                            "room_silent_level": 0,
+                            "room_silent_second": 0,
+                            "area_name": "è§é¢èå¤©",
+                            "pendants": "",
+                            "area_pendants": "",
+                            "hot_words": ["2333333", "åï¼å¦å¦é¶å", "çº¢çº¢ç«ç«ææææ", "FFFFFFFFFF", "Yooooooo", "åªåªåªåªåª", "666666666", "èå¸æºå¸¦å¸¦æ", "ä½ ä¸ºä»ä¹è¿ä¹çç»å", "gg", "prprpr", "åå¤§ä½¬ä½å¤´", "è¯·å¤§å®¶æ³¨æå¼¹å¹ç¤¼ä»ªå¦ï¼", "è¿æè¿ç§æä½ï¼", "å", "æcall", "ä½ æ°ä¸æ°ï¼", "éåå¢ï¼"],
+                            "hot_words_status": 0,
+                            "verify": "",
+                            "new_pendants": {
+                                "frame": null,
+                                "badge": null,
+                                "mobile_frame": null,
+                                "mobile_badge": null
+                            },
+                            "up_session": "l:one:live:record:697972:1545131306",
+                            "pk_status": 0,
+                            "pk_id": 0,
+                            "allow_change_area_time": 0,
+                            "allow_upload_cover_time": 0
+                        }
+                    },
+                    "playUrlRes": {
+                        "code": 0,
+                        "msg": "success",
+                        "message": "success",
+                        "data": {
+                            "current_quality": 4,
+                            "accept_quality": ["4"],
+                            "durl": [{
+                                "url": "https:\u002F\u002Fqn.live-play.acgvideo.com\u002Flive-qn\u002F582120\u002Flive_569919_8571535.flv?wsSecret=c0bd67b3cabcea7061739a93f2643926&wsTime=1545142450&trid=5c0bb50eaa714c90aac6c4e9d1f40931&sig=no",
+                                "length": 0,
+                                "order": 1,
+                                "stream_type": 0
+                            },
+                            {
+                                "url": "https:\u002F\u002Fqn.live-play.acgvideo.com\u002Flive-qn\u002F937238\u002Flive_569919_8571535.flv?wsSecret=475c895129b976df3cb8eb40989b42e7&wsTime=1545142450&trid=5c0bb50eaa714c90aac6c4e9d1f40931&sig=no",
+                                "length": 0,
+                                "order": 1,
+                                "stream_type": 0
+                            },
+                            {
+                                "url": "https:\u002F\u002Fqn.live-play.acgvideo.com\u002Flive-qn\u002F355811\u002Flive_569919_8571535.flv?wsSecret=3690b47376918f93ba838506e4098e3e&wsTime=1545142450&trid=5c0bb50eaa714c90aac6c4e9d1f40931&sig=no",
+                                "length": 0,
+                                "order": 1,
+                                "stream_type": 0
+                            },
+                            {
+                                "url": "https:\u002F\u002Fqn.live-play.acgvideo.com\u002Flive-qn\u002F884651\u002Flive_569919_8571535.flv?wsSecret=0205332e5e97679fb1323c245fa6c155&wsTime=1545142450&trid=5c0bb50eaa714c90aac6c4e9d1f40931&sig=no",
+                                "length": 0,
+                                "order": 1,
+                                "stream_type": 0
+                            }]
+                        }
+                    }
+                }
+            </script>
+            <script>
+                addWaifu && addWaifu("uni")
+            </script>
+            <script src=//static.hdslb.com/live-static/libs/jquery/jquery-1.11.3.min.js>
+            </script>
+            <script src=//s1.hdslb.com/bfs/static/blive/live-assets/player/decorator.min.js?5e8a54fa420368
+            onload="aea16741afe6960 &amp;&amp; aea16741afe6960()">
+            </script>
+            <script>
+                addWaifu && addWaifu("rom")
+            </script>
+            <script src=//s1.hdslb.com/bfs/static/blive/blfe-live-room/static/js/vendors.05f3a7b56cc15e626f25.js>
+            </script>
+            <script src=//s1.hdslb.com/bfs/static/blive/blfe-live-room/static/js/app.f2cae928a0a433e58667.js>
+            </script>
+            <script>
+                addWaifu && addWaifu("ram")
+            </script>
+            <script>
+                var _mtac = {}; !
+                function() {
+                    var t = document.createElement("script");
+                    t.src = "//pingjs.qq.com/h5/stats.js?v2.0.4",
+                    t.setAttribute("name", "MTAH5"),
+                    t.setAttribute("sid", "500631845"),
+                    t.setAttribute("cid", "500631851");
+                    var e = document.getElementsByTagName("script")[0];
+                    e.parentNode.insertBefore(t, e)
+                } (),
+                setTimeout(function() {
+                    window.MtaH5 && MtaH5.clickStat("ID", {
+                        id: "000385"
+                    })
+                },
+                3e3)
+            </script>
+        </div>
+    </body>
+
+</html>
+<!-- 2018.12.18 - 21:12:31 28ms -->
